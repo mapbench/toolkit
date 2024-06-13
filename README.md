@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="docs/images/logo.png" align="center" width="20%">
+  <img src="docs/images/logo.png" align="center" width="18%">
   
   <h3 align="center"><strong>Is Your HD Map Constructor Reliable under Sensor Corruptions?</strong></h3>
 
@@ -50,3 +50,15 @@
 
 
 ## About
+`MapBench` is the first comprehensive benchmark designed to evaluate the out-of-domain robustness of HD map construction methods against various sensor corruptions.
+
+| <img src="docs/images/definition.png"> |
+| :-: |
+| Our benchmark encompasses a total of 16 corruption types for HD map construction, which can be categorized into exterior, interior, and sensor failure scenarios. Besides, we define 13 multi-sensor corruptions by combining the camera and LiDAR sensor failure types. |
+
+
+### LiDAR Sensor Corruptions
+
+
+
+
