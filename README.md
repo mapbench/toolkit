@@ -59,6 +59,13 @@
 
 ### LiDAR Sensor Corruptions
 
+|||||
+| :---: | :---: | :---: | :---: |
+| <img src="./docs/GIFs/lidar/wet_ground-moderate.gif" width="180"> | <img src="./docs/GIFs/lidar/snow-moderate.gif" width="180"> | <img src="./docs/GIFs/lidar/beam_missing-moderate.gif" width="180"> | <img src="./docs/GIFs/lidar/incomplete_echo-moderate.gif" width="180"> |
+| **Wet Ground** | **Snow** | **Beam Missing** | **Incomplete Echo** |
+| <img src="./docs/GIFs/lidar/fog-moderate.gif" width="180"> | <img src="./docs/GIFs/lidar/motion_blur-moderate.gif" width="180"> | <img src="./docs/GIFs/lidar/crosstalk-moderate.gif" width="180"> | <img src="./docs/GIFs/lidar/cross_sensor-moderate.gif" width="180"> |
+| **Fog** | **Motion Blur** | **Crosstalk** | **Cross-Sensor** |
+| | | |
 
 
 
