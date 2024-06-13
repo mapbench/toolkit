@@ -60,7 +60,8 @@
 
 ## Updates
 
-To be added.
+- \[2024.06\] - Launch of the `MapBench` benchmark. In this version, we include a total of **31** HD map construction models, evaluated on **29** different camera and LiDAR corruption types across **3** severity levels.
+
 
 
 ## Outline
@@ -78,6 +79,10 @@ To be added.
 
 
 ## Benchmark Definition
+
+`MapBench` consists of a total of **29** different sensor corruption scenarios, including **8** types of camera corruptions, **8** types of LiDAR corruptions, and **13** types of camera-LiDAR corruption combinations.
+
+
 ### LiDAR Sensor Corruptions
 
 |||||
