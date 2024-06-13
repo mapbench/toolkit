@@ -17,7 +17,7 @@
     Weiming Li</br>
     Lingdong Kong<sup>3,‡</sup>&nbsp;&nbsp;&nbsp;
     Jing Zhang<sup>2,‡</sup>
-    </br>
+    </br></br>
   <sup>1</sup>Samsung R&D Institute China-Beijing&nbsp;&nbsp;&nbsp;
   <sup>2</sup>The University of Sydney&nbsp;&nbsp;&nbsp;
   <sup>3</sup>National University of Singapore
@@ -57,6 +57,27 @@
 | Our benchmark encompasses a total of 16 corruption types for HD map construction, which can be categorized into exterior, interior, and sensor failure scenarios. Besides, we define 13 multi-sensor corruptions by combining the camera and LiDAR sensor failure types. |
 
 
+
+## Updates
+
+To be added.
+
+
+## Outline
+
+- [Benchmark Definition](#benchmark-definition)
+- [Installation](#installation)
+- [Data Preparation](#data-preparation)
+- [Getting Started](#getting-started)
+- [Model Zoo](#model-zoo)
+- [Benchmark](#benchmark)
+- [TODO List](#todo-list)
+- [Citation](#citation)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+
+
+## Benchmark Definition
 ### LiDAR Sensor Corruptions
 
 |||||
@@ -72,9 +93,51 @@
 
 ||||
 | :---: | :---: | :---: |
-| <img src="./docs/GIFs/camera/brightness-mid.gif" width="241"> | <img src="./docs/GIFs/camera/low-light-easy.gif" width="241"> | <img src="./docs/GIFs/camera/fog-mid.gif" width="241"> |
+| <img src="./docs/GIFs/camera/brightness-mid.gif" width="242"> | <img src="./docs/GIFs/camera/low-light-easy.gif" width="242"> | <img src="./docs/GIFs/camera/fog-mid.gif" width="242"> |
 | **Brightness** | **Low-Light** | **Fog** |
-| <img src="./docs/GIFs/camera/snow-mid.gif" width="241"> | <img src="./docs/GIFs/camera/motion-blur-hard.gif" width="241"> | <img src="./docs/GIFs/camera/color-quant-mid.gif" width="241"> |
+| <img src="./docs/GIFs/camera/snow-mid.gif" width="242"> | <img src="./docs/GIFs/camera/motion-blur-hard.gif" width="242"> | <img src="./docs/GIFs/camera/color-quant-mid.gif" width="242"> |
 | **Snow** | **Motion Blur** | **Color Quant** |
 ||
+
+### Camera Sensor Failures
+
+
+
+## Installation
+
+To be added.
+
+
+
+## Data Preparation
+
+
+
+## Getting Started
+
+
+
+## Model Zoo
+
+
+
+## Benchmark
+
+
+
+## TODO List
+
+
+
+## Citation
+
+
+
+## License
+
+
+
+## Acknowledgements
+
+
 
