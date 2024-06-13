@@ -156,7 +156,7 @@ The *mean average precision (mAP)* is consistently used as the main indicator fo
 
 ### :red_car:&nbsp; Camera-Only Benchmarking Results
 <p align="center">
-  <img src="docs/figs/images/metrics_camera.png" align="center" width="100%">
+  <img src="docs/images/metrics_camera.png" align="center" width="100%">
 </p>
 
 | Model            | mCE | mRR | Clean  | Camera | Frame | Quant | Motion | Bright | Dark | Fog | Snow |
@@ -172,7 +172,7 @@ The *mean average precision (mAP)* is consistently used as the main indicator fo
 
 ### :blue_car:&nbsp; LiDAR-Only Benchmarking Results
 <p align="center">
-  <img src="docs/figs/images/metrics_LiDAR.png" align="center" width="100%">
+  <img src="docs/images/metrics_LiDAR.png" align="center" width="100%">
 </p>
 
 | Model            | mCE | mRR | Clean  | Fog | Wet | Snow | Motion | Beam | Crosstalk | Echo | Sensor |
@@ -184,7 +184,7 @@ The *mean average precision (mAP)* is consistently used as the main indicator fo
 
 ### :taxi:&nbsp; Camera-LiDAR Fusion Benchmarking Results
 <p align="center">
-  <img src="docs/figs/images/metrics_Fusion.png" align="center" width="100%">
+  <img src="docs/images/metrics_Fusion.png" align="center" width="100%">
 </p>
 
 | Model            | Modality | Camera | Lidar  | AP<sub>ped</sub> | AP<sub>div</sub> | AP<sub>bou</sub> | mAP | 
