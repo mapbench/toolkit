@@ -4,7 +4,7 @@
 <p align="center">
   <img src="docs/images/logo.png" align="center" width="18%">
   
-  <h3 align="center"><strong>Is Your HD Map Constructor Reliable under Sensor Corruptions?</strong></h3>
+  <h2 align="center"><strong>Is Your HD Map Constructor Reliable under Sensor Corruptions?</strong></h2>
 
   <p align="center">
     Xiaoshuai Hao<sup>1</sup>&nbsp;&nbsp;&nbsp;
