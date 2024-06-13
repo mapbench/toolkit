@@ -26,7 +26,7 @@
 </p>
 
 <p align="center">
-  <a href="" target='_blank'>
+  <a href="https://mapbench.github.io/paper.pdf" target='_blank'>
     <img src="https://img.shields.io/badge/Paper-%F0%9F%93%83-orange">
   </a>
   
@@ -61,11 +61,20 @@
 
 |||||
 | :---: | :---: | :---: | :---: |
-| <img src="./docs/GIFs/lidar/wet_ground-moderate.gif" width="180"> | <img src="./docs/GIFs/lidar/snow-moderate.gif" width="180"> | <img src="./docs/GIFs/lidar/beam_missing-moderate.gif" width="180"> | <img src="./docs/GIFs/lidar/incomplete_echo-moderate.gif" width="180"> |
+| <img src="./docs/GIFs/lidar/wet_ground-moderate.gif" width="175"> | <img src="./docs/GIFs/lidar/snow-moderate.gif" width="175"> | <img src="./docs/GIFs/lidar/beam_missing-moderate.gif" width="175"> | <img src="./docs/GIFs/lidar/incomplete_echo-moderate.gif" width="175"> |
 | **Wet Ground** | **Snow** | **Beam Missing** | **Incomplete Echo** |
-| <img src="./docs/GIFs/lidar/fog-moderate.gif" width="180"> | <img src="./docs/GIFs/lidar/motion_blur-moderate.gif" width="180"> | <img src="./docs/GIFs/lidar/crosstalk-moderate.gif" width="180"> | <img src="./docs/GIFs/lidar/cross_sensor-moderate.gif" width="180"> |
+| <img src="./docs/GIFs/lidar/fog-moderate.gif" width="175"> | <img src="./docs/GIFs/lidar/motion_blur-moderate.gif" width="175"> | <img src="./docs/GIFs/lidar/crosstalk-moderate.gif" width="175"> | <img src="./docs/GIFs/lidar/cross_sensor-moderate.gif" width="175"> |
 | **Fog** | **Motion Blur** | **Crosstalk** | **Cross-Sensor** |
-| | | |
+||
 
 
+### Camera Sensor Corruptions
+
+||||
+| :---: | :---: | :---: |
+| <img src="./docs/GIFs/camera/brightness-mid.gif" width="241"> | <img src="./docs/GIFs/camera/low-light-easy.gif" width="241"> | <img src="./docs/GIFs/camera/fog-mid.gif" width="241"> |
+| **Brightness** | **Low-Light** | **Fog** |
+| <img src="./docs/GIFs/camera/snow-mid.gif" width="241"> | <img src="./docs/GIFs/camera/motion-blur-hard.gif" width="241"> | <img src="./docs/GIFs/camera/color-quant-mid.gif" width="241"> |
+| **Snow** | **Motion Blur** | **Color Quant** |
+||
 
