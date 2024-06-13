@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="docs/figs/logo.png" align="center" width="23%">
+  <img src="docs/images/logo.png" align="center" width="20%">
   
   <h3 align="center"><strong>Is Your HD Map Constructor Reliable under Sensor Corruptions?</strong></h3>
 
@@ -15,7 +15,7 @@
     Yi Zhou<sup>1</sup>&nbsp;&nbsp;&nbsp;
     Qiang Wang<sup>1</sup>&nbsp;&nbsp;&nbsp;
     Weiming Li</br>
-    Lingdong Kong<sup>3,‡</sup>
+    Lingdong Kong<sup>3,‡</sup>&nbsp;&nbsp;&nbsp;
     Jing Zhang<sup>2,‡</sup>
     </br>
   <sup>1</sup>Samsung R&D Institute China-Beijing&nbsp;&nbsp;&nbsp;
