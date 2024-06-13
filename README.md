@@ -66,10 +66,10 @@
 
 ## Outline
 
-- [Benchmark Definition](#benchmark-definition)
-- [Installation](#installation)
-- [Data Preparation](#data-preparation)
-- [Getting Started](#getting-started)
+- [Benchmark Definition](#bar_chart-benchmark-definition)
+- [Installation](#gear-installation)
+- [Data Preparation](#hotsprings-data-preparation)
+- [Getting Started](#rocket-getting-started)
 - [Model Zoo](#model-zoo)
 - [Benchmark](#benchmark)
 - [TODO List](#todo-list)
@@ -78,7 +78,7 @@
 - [Acknowledgements](#acknowledgements)
 
 
-## Benchmark Definition
+## :bar_chart: Benchmark Definition
 
 `MapBench` consists of a total of **29** different sensor corruption scenarios, including **8** types of camera corruptions, **8** types of LiDAR corruptions, and **13** types of camera-LiDAR corruption combinations.
 
@@ -108,17 +108,24 @@
 
 
 
-## Installation
+## :gear: Installation
 
-To be added.
-
-
-
-## Data Preparation
+For details related to installation, kindly refer to [INSTALL.md](docs/INSTALL.md).
 
 
 
-## Getting Started
+## :hotsprings: Data Preparation
+
+Our datasets are hosted by [OpenDataLab](https://opendatalab.com/).
+><img src="https://raw.githubusercontent.com/opendatalab/dsdl-sdk/2ae5264a7ce1ae6116720478f8fa9e59556bed41/resources/opendatalab.svg" width="32%"/><br>
+> OpenDataLab is a pioneering open data platform for the large AI model era, making datasets accessible. By using OpenDataLab, researchers can obtain free formatted datasets in various fields.
+
+Kindly refer to [DATA_PREPARE.md](docs/DATA_PREPARE.md) for the details to prepare the training and evaluation datasets.
+
+
+## :rocket: Getting Started
+
+To learn more usage about this codebase, kindly refer to [GET_STARTED.md](docs/GET_STARTED.md).
 
 
 
@@ -128,22 +135,13 @@ To be added.
 <summary>&nbsp<b>HD Map Construction</b></summary>
 
 > - [x] **[HDMapNet](https://arxiv.org/abs/2107.06307), ICRA 2022.** <sup>[**`[Code]`**](https://github.com/Tsinghua-MARS-Lab/HDMapNet)</sup>
-
 > - [x] **[VectorMapNet](https://arxiv.org/abs/2206.08920), ICML 2023.** <sup>[**`[Code]`**](https://github.com/Mrmoore98/VectorMapNet_code)</sup>
-
 > - [x] **[MapTR](https://arxiv.org/abs/2208.14437), ICLR 2023.** <sup>[**`[Code]`**](https://github.com/hustvl/MapTR)</sup>
-
 > - [x] **[MapTRv2](https://arxiv.org/abs/2308.05736), arXiv 2023.** <sup>[**`[Code]`**](https://github.com/hustvl/MapTR)</sup>
-
 > - [x] **[PivotNet](https://arxiv.org/pdf/2308.16477), ICCV 2023.** <sup>[**`[Code]`**](https://github.com/wenjie710/PivotNet)</sup>
-
 > - [x] **[BeMapNet](https://openaccess.thecvf.com/content/CVPR2023/html/Qiao_End-to-End_Vectorized_HD-Map_Construction_With_Piecewise_Bezier_Curve_CVPR_2023_paper.html), CVPR 2023.** <sup>[**`[Code]`**](https://github.com/er-muyue/BeMapNet)</sup>
-
 > - [x] **[StreamMapNet](https://arxiv.org/abs/2308.12570), WACV 2024.** <sup>[**`[Code]`**](https://github.com/yuantianyuan01/StreamMapNet)</sup>
-
-
 > - [x] **[HIMap](https://arxiv.org/abs/2308.12570), CVPR 2024.** <sup>[**`[Code]`**]()</sup>
-
 
 </details>
 
