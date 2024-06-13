@@ -147,23 +147,28 @@ To be added.
 
 ## Benchmark
 
-### HD Map construction on nuScenes
+### HD Map construction
 
-#### Camera-only 
+The *mean average precision (mAP)* is consistently used as the main indicator for evaluating model performance in our HD Map construction  benchmark. The following two metrics are adopted to compare among models' robustness:
+- **mCE (the lower the better):** The *average corruption error* (in percentage) of a candidate model compared to the baseline model, which is calculated among all corruption types across three severity levels.
+- **mRR (the higher the better):** The *average resilience rate* (in percentage) of a candidate model compared to its "clean" performance, which is calculated among all corruption types across three severity levels.
+
+
+### :red_car:&nbsp; Camera-Only Benchmarking Results
 <p align="center">
   <img src="docs/figs/stat/metrics_camera.png" align="center" width="100%">
 </p>
 
 | Model            | mCE | mRR | Clean  | Camera | Frame | Quant | Motion | Bright | Dark | Fog | Snow |
 | :--------------: | :-----: | :-----: |:-----: | :-------: | :--------: | :---------: | :---------: | :----: | :-------: | :----: | :----: |
-|**[HDMapNet](https://arxiv.org/abs/2107.06307), ICRA 2022.** <sup>[**`[Code]`**](https://github.com/Tsinghua-MARS-Lab/HDMapNet)</sup>      |18.7.8|43.3|23.0|4.6|5.1|18.9|20.8|16.7|9.3|10.6|5.2|
-|**[VectorMapNet](https://arxiv.org/abs/2206.08920), ICML 2023.** <sup>[**`[Code]`**](https://github.com/Mrmoore98/VectorMapNet_code)</sup> |148.5|40.6|40.9|13.9|12.3|26.6|29.7|25.2|7.8|18.3|2.9|
-|**[PivotNet](https://arxiv.org/pdf/2308.16477), ICCV 2023.** <sup>[**`[Code]`**](https://github.com/wenjie710/PivotNet)</sup>              |96.3|45.2|57.4|17.1|16.7|36.4|34.1|43.5|16.5|37.4|4.6|
-|**[BeMapNet](https://openaccess.thecvf.com/content/CVPR2023/html/Qiao_End-to-End_Vectorized_HD-Map_Construction_With_Piecewise_Bezier_Curve_CVPR_2023_paper.html), CVPR 2023.** <sup>[**`[Code]`**](https://github.com/er-muyue/BeMapNet)</sup>               |78.5|50.3|59.8|18.8|18.5|38.1|35.3|50.7|23.2|46.5|9.6|
-|**[MapTR](https://arxiv.org/abs/2208.14437), ICLR 2023.** <sup>[**`[Code]`**](https://github.com/hustvl/MapTR)</sup>                       |100.0|49.3|50.3|15.0|14.2|35.4|23.5|44.3|22.7|38.5|3.8|
-|**[MapTRv2](https://arxiv.org/abs/2308.05736), arXiv 2023.** <sup>[**`[Code]`**](https://github.com/hustvl/MapTR)</sup>                     |72.6|51.4|61.5|18.8|18.2|45.3|31.0|54.9|32.3|50.7|1.1|
-|**[StreamMapNet](https://arxiv.org/abs/2308.12570), WACV 2024.** <sup>[**`[Code]`**](https://github.com/yuantianyuan01/StreamMapNet)</sup> |64.8|54.4|63.4|13.4|15.5|48.1|44.3|57.0|36.1|52.4|9.1|
-|**[HIMap](https://arxiv.org/abs/2308.12570), CVPR 2024.** <sup>[**`[Code]`**]()</sup>                                                      |56.9|56.6|65.5|19.4|19.0|52.0|42.5|60.9|40.6|57.1|5.1|
+|**[HDMapNet](https://arxiv.org/abs/2107.06307)**       |18.7.8|43.3|23.0|4.6|5.1|18.9|20.8|16.7|9.3|10.6|5.2|
+|**[VectorMapNet](https://arxiv.org/abs/2206.08920)**   |148.5|40.6|40.9|13.9|12.3|26.6|29.7|25.2|7.8|18.3|2.9|
+|**[PivotNet](https://arxiv.org/pdf/2308.16477)**       |96.3|45.2|57.4|17.1|16.7|36.4|34.1|43.5|16.5|37.4|4.6|
+|**[BeMapNet](https://openaccess.thecvf.com/content/CVPR2023/html/Qiao_End-to-End_Vectorized_HD-Map_Construction_With_Piecewise_Bezier_Curve_CVPR_2023_paper.html)**            |78.5|50.3|59.8|18.8|18.5|38.1|35.3|50.7|23.2|46.5|9.6|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**          |100.0|49.3|50.3|15.0|14.2|35.4|23.5|44.3|22.7|38.5|3.8|
+|**[MapTRv2](https://arxiv.org/abs/2308.05736)**        |72.6|51.4|61.5|18.8|18.2|45.3|31.0|54.9|32.3|50.7|1.1|
+|**[StreamMapNet](https://arxiv.org/abs/2308.12570)**   |64.8|54.4|63.4|13.4|15.5|48.1|44.3|57.0|36.1|52.4|9.1|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**          |56.9|56.6|65.5|19.4|19.0|52.0|42.5|60.9|40.6|57.1|5.1|
 
 #### LiDAR-only 
 <p align="center">
