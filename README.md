@@ -170,70 +170,70 @@ The *mean average precision (mAP)* is consistently used as the main indicator fo
 |**[StreamMapNet](https://arxiv.org/abs/2308.12570)**   |64.8|54.4|63.4|13.4|15.5|48.1|44.3|57.0|36.1|52.4|9.1|
 |**[HIMap](https://arxiv.org/abs/2308.12570)**          |56.9|56.6|65.5|19.4|19.0|52.0|42.5|60.9|40.6|57.1|5.1|
 
-#### LiDAR-only 
+### :blue_car:&nbsp; LiDAR-Only Benchmarking Results
 <p align="center">
   <img src="docs/figs/stat/metrics_LiDAR.png" align="center" width="100%">
 </p>
 
 | Model            | mCE | mRR | Clean  | Fog | Wet | Snow | Motion | Beam | Crosstalk | Echo | Sensor |
 | :--------------: | :-----: | :-----: |:-----: | :-------: | :--------: | :---------: | :---------: | :----: | :-------: | :----: | :----: |
-|**[VectorMapNet](https://arxiv.org/abs/2206.08920), ICML 2023.** <sup>[**`[Code]`**](https://github.com/Mrmoore98/VectorMapNet_code)</sup> |94.9|63.4|34.0|15.7|20.3|15.9|28.8|19.2|19.7|31.3|9.5|
-|**[MapTR](https://arxiv.org/abs/2208.14437), ICLR 2023.** <sup>[**`[Code]`**](https://github.com/hustvl/MapTR)</sup>                       |100.0|55.1|55.6|19.9|19.1|9.6|27.1|16.5|16.3|32.3|6.4|
-|**[MapTRv2](https://arxiv.org/abs/2308.05736), arXiv 2023.** <sup>[**`[Code]`**](https://github.com/hustvl/MapTR)</sup>                     |74.6|57.2|61.5|28.5|29.5|10.3|36.9|27.9|15.4|44.7|14.0|
-|**[HIMap](https://arxiv.org/abs/2308.12570), CVPR 2024.** <sup>[**`[Code]`**]()</sup>                                                      |73.1|59.2|64.3|26.6|24.6|16.1|37.4|24.4|26.7|43.1|10.8|
+|**[VectorMapNet](https://arxiv.org/abs/2206.08920)**  |94.9|63.4|34.0|15.7|20.3|15.9|28.8|19.2|19.7|31.3|9.5|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**                       |100.0|55.1|55.6|19.9|19.1|9.6|27.1|16.5|16.3|32.3|6.4|
+|**[MapTRv2](https://arxiv.org/abs/2308.05736)**                     |74.6|57.2|61.5|28.5|29.5|10.3|36.9|27.9|15.4|44.7|14.0|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**                       |73.1|59.2|64.3|26.6|24.6|16.1|37.4|24.4|26.7|43.1|10.8|
 
-#### Fusion
+### :taxi:&nbsp; Camera-LiDAR Fusion Benchmarking Results
 <p align="center">
   <img src="docs/figs/stat/metrics_Fusion.png" align="center" width="100%">
 </p>
 
 | Model            | Modality | Camera | Lidar  | AP<sub>ped</sub> | AP<sub>div</sub> | AP<sub>bou</sub> | mAP | 
 | :--------------: | :-----: | :-----: |:-----: | :-------: | :--------: | :---------: | :---------: |
-|MapTR  | C & L | ✓          | ✓             |55.9|62.3|69.3|62.5|
-|MapTR  |   C   | ✓          |  —            |46.3|51.5|53.1|50.3|
-|MapTR  |   C   |Camera Crash |  —            |18.0|14.5|12.4|15.0|
-|MapTR  |   C   |Frame Lost   |  —            |13.9|15.1|13.4|14.2|
-|MapTR  | C & L | ✗          |  —            |15.0|18.2|34.4|22.5|
-|MapTR  | C & L |Camera Crash |  —            |32.5|36.5|48.4|39.1|
-|MapTR  | C & L |Frame Lost   |  —            |29.1|33.7|46.1|36.3|
-|MapTR  |   L   | —           | ✓            |26.6|31.7|41.8|33.4|
-|MapTR  |   L   | —           |Incomplete Echo|26.3|29.9|40.6|32.3|
-|MapTR  |   L   | —           |Crosstalk      |13.6|15.0|20.3|16.3|
-|MapTR  |   L   | —           |Cross-Sensor   |3.5|6.6|8.9|6.4|
-|MapTR  | C & L | ✓          | ✗          |20.7|27.4|13.1|20.4|
-|MapTR  | C & L | ✓          |Incomplete Echo|47.9|55.2|62.2|55.1|
-|MapTR  | C & L | ✓          |Crosstalk      |36.7|42.5|45.3|41.5|
-|MapTR  | C & L | ✓          |Cross-Sensor   |33.9|42.9|42.0|39.6|
-|MapTR  | C & L |Camera Crash |Incomplete Echo|32.4|35.6|47.8|38.6|
-|MapTR  | C & L |Camera Crash |Crosstalk      |19.7|21.6|26.9|22.7|
-|MapTR  | C & L |Camera Crash |Cross-Sensor   |18.4|20.8|23.2|20.8|
-|MapTR  | C & L |Frame Lost   |Incomplete Echo|28.9|32.8|45.5|35.8|
-|MapTR  | C & L |Frame Lost   |Crosstalk      |16.9|19.9|25.5|20.8|
-|MapTR  | C & L |Frame Lost   |Cross-Sensor   |15.8|19.4|22.2|19.1|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L | ✓          | ✓             |55.9|62.3|69.3|62.5|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  |   C   | ✓          |  —            |46.3|51.5|53.1|50.3|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  |   C   |Camera Crash |  —            |18.0|14.5|12.4|15.0|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  |   C   |Frame Lost   |  —            |13.9|15.1|13.4|14.2|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L | ✗          |  —            |15.0|18.2|34.4|22.5|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L |Camera Crash |  —            |32.5|36.5|48.4|39.1|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L |Frame Lost   |  —            |29.1|33.7|46.1|36.3|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  |   L   | —           | ✓            |26.6|31.7|41.8|33.4|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  |   L   | —           |Incomplete Echo|26.3|29.9|40.6|32.3|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  |   L   | —           |Crosstalk      |13.6|15.0|20.3|16.3|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  |   L   | —           |Cross-Sensor   |3.5|6.6|8.9|6.4|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L | ✓          | ✗          |20.7|27.4|13.1|20.4|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L | ✓          |Incomplete Echo|47.9|55.2|62.2|55.1|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L | ✓          |Crosstalk      |36.7|42.5|45.3|41.5|
+|**[MapTR](https://arxiv.org/abs/2208.14437)** | C & L | ✓          |Cross-Sensor   |33.9|42.9|42.0|39.6|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L |Camera Crash |Incomplete Echo|32.4|35.6|47.8|38.6|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L |Camera Crash |Crosstalk      |19.7|21.6|26.9|22.7|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L |Camera Crash |Cross-Sensor   |18.4|20.8|23.2|20.8|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L |Frame Lost   |Incomplete Echo|28.9|32.8|45.5|35.8|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L |Frame Lost   |Crosstalk      |16.9|19.9|25.5|20.8|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L |Frame Lost   |Cross-Sensor   |15.8|19.4|22.2|19.1|
 
 | Model            | Modality | Camera | Lidar  | AP<sub>ped</sub> | AP<sub>div</sub> | AP<sub>bou</sub> | mAP | 
 | :--------------: | :-----: | :-----: |:-----: | :-------: | :--------: | :---------: | :---------: |
-|HIMap  | C & L | ✓          | ✓              |71.0|72.4|79.4|74.3|
-|HIMap  |   C   | ✓          |  —            |62.2|66.5|67.9|65.5|
-|HIMap  |   C   |Camera Crash |  —            |27.3|19.4|11.6|19.4|
-|HIMap  |   C   |Frame Lost   |  —            |21.7|19.1|16.1|19.0|
-|HIMap  | C & L | ✗          |  —            |40.9|46.4|74.7|50.7|
-|HIMap  | C & L |Camera Crash |  —            |36.3|27.7|20.9|28.3|
-|HIMap  | C & L |Frame Lost   |  —            |29.9|25.0|23.8|26.2|
-|HIMap  |   L   | —           | ✓            |54.8|64.7|73.5|64.3|
-|HIMap  |   L   | —           |Incomplete Echo|35.4|41.1|52.7|43.1|
-|HIMap  |   L   | —           |Crosstalk      |20.9|23.8|35.3|26.7|
-|HIMap  |   L   | —           |Cross-Sensor   |7.8|10.2|14.4|10.8|
-|HIMap  | C & L | ✓          | ✗          |30.7|38.7|29.0|32.8|
-|HIMap  | C & L | ✓          |Incomplete Echo|59.1|63.7|69.9|64.2|
-|HIMap  | C & L | ✓          |Crosstalk      |54.1|57.5|63.4|58.3|
-|HIMap  | C & L | ✓          |Cross-Sensor   |44.2|50.7|50.8|48.5|
-|HIMap  | C & L |Camera Crash |Incomplete Echo|36.2|26.9|20.5|27.9|
-|HIMap  | C & L |Camera Crash |Crosstalk      |29.2|19.3|12.9|20.5|
-|HIMap  | C & L |Camera Crash |Cross-Sensor   |23.1|13.8|5.9|14.3|
-|HIMap  | C & L |Frame Lost   |Incomplete Echo|29.9|24.4|23.5|25.9|
-|HIMap  | C & L |Frame Lost   |Crosstalk      |23.6|18.9|18.0|20.2|
-|HIMap  | C & L |Frame Lost   |Cross-Sensor   |17.7|14.3|11.2|14.4|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**   | C & L | ✓          | ✓              |71.0|72.4|79.4|74.3|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    |   C   | ✓          |  —            |62.2|66.5|67.9|65.5|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**   |   C   |Camera Crash |  —            |27.3|19.4|11.6|19.4|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    |   C   |Frame Lost   |  —            |21.7|19.1|16.1|19.0|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L | ✗          |  —            |40.9|46.4|74.7|50.7|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L |Camera Crash |  —            |36.3|27.7|20.9|28.3|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L |Frame Lost   |  —            |29.9|25.0|23.8|26.2|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    |   L   | —           | ✓            |54.8|64.7|73.5|64.3|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    |   L   | —           |Incomplete Echo|35.4|41.1|52.7|43.1|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    |   L   | —           |Crosstalk      |20.9|23.8|35.3|26.7|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    |   L   | —           |Cross-Sensor   |7.8|10.2|14.4|10.8|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L | ✓          | ✗          |30.7|38.7|29.0|32.8|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L | ✓          |Incomplete Echo|59.1|63.7|69.9|64.2|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L | ✓          |Crosstalk      |54.1|57.5|63.4|58.3|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L | ✓          |Cross-Sensor   |44.2|50.7|50.8|48.5|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L |Camera Crash |Incomplete Echo|36.2|26.9|20.5|27.9|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L |Camera Crash |Crosstalk      |29.2|19.3|12.9|20.5|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L |Camera Crash |Cross-Sensor   |23.1|13.8|5.9|14.3|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L |Frame Lost   |Incomplete Echo|29.9|24.4|23.5|25.9|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L |Frame Lost   |Crosstalk      |23.6|18.9|18.0|20.2|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**   | C & L |Frame Lost   |Cross-Sensor   |17.7|14.3|11.2|14.4|
 
 
 
@@ -247,6 +247,23 @@ The *mean average precision (mAP)* is consistently used as the main indicator fo
 ## Citation
 If you find this work helpful, please kindly consider citing our paper:
 
+```bibtex
+@inproceedings{kong2023robo3d,
+    author = {Lingdong Kong and Youquan Liu and Xin Li and Runnan Chen and Wenwei Zhang and Jiawei Ren and Liang Pan and Kai Chen and Ziwei Liu},
+    title = {Robo3D: Towards Robust and Reliable 3D Perception against Corruptions},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    pages = {19994--20006},
+    year = {2023},
+}
+```
+```bibtex
+@misc{kong2023robo3d_benchmark,
+  title = {The Robo3D Benchmark for Robust and Reliable 3D Perception},
+  author = {Lingdong Kong and Youquan Liu and Xin Li and Runnan Chen and Wenwei Zhang and Jiawei Ren and Liang Pan and Kai Chen and Ziwei Liu},
+  howpublished = {\url{https://github.com/ldkong1205/Robo3D}},
+  year = {2023},
+}
+```
 
 
 
