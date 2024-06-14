@@ -70,9 +70,9 @@
 - [Installation](#gear-installation)
 - [Data Preparation](#hotsprings-data-preparation)
 - [Getting Started](#rocket-getting-started)
-- [Model Zoo](#model-zoo)
-- [Benchmark](#benchmark)
-- [TODO List](#todo-list)
+- [Model Zoo](#high_brightness-model-zoo)
+- [Benchmark](#golf-benchmark)
+- [TODO List](#memo-todo-list)
 - [Citation](#citation)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
@@ -97,8 +97,12 @@
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | Wet Ground | significantly attenuated laser echoes | (water height, noise floor) | (0.2, 0.2) | (1.0, 0.3) | (1.2, 0.7) |
 | Snow | back-scattering and attenuation of LiDAR points | (snowfall rate, terminal velocity) | (0.5, 2.0) | (1.0, 1.6) | (2.5, 1.6) |
+| Beam Missing | loss of certain light impulses | beam number to drop | 8 | 16 | 24 |
+| Incomplete Echo | incomplete LiDAR readings | drop ratio | 0.75 | 0.85 | 0.95 |
 | Fog | back-scattering and attenuation of LiDAR points | beta | 0.008 | 0.05 | 0.2 |
-
+| Motion Blur | blur caused by vehicle movement | trans std | 0.2 | 0.3 | 0.4 |
+| Crosstalk | light impulses interference | percentage | 0.03 | 0.07 | 0.12 |
+| Cross-Sensor | cross sensor data | beam number to drop | 8 | 16 | 20 |
 
 
 ### Camera Sensor Corruptions
@@ -111,7 +115,19 @@
 | **Snow** | **Motion Blur** | **Color Quant** |
 ||
 
+| Type | Description | Parameter | Easy | Moderate | Hard |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| Brightness | 
+| Low-Light |
+| Fog |
+| Snow |
+| Motion Blur |
+| Color Quant |
+
+
+
 ### Camera Sensor Failures
+
 
 
 
@@ -136,7 +152,7 @@ To learn more usage about this codebase, kindly refer to [GET_STARTED.md](docs/G
 
 
 
-## Model Zoo
+## :high_brightness: Model Zoo
 
 <details open>
 <summary>&nbsp<b>HD Map Construction</b></summary>
@@ -155,7 +171,7 @@ To learn more usage about this codebase, kindly refer to [GET_STARTED.md](docs/G
 
 
 
-## Benchmark
+## :golf: Benchmark
 
 The *mean average precision (mAP)* is consistently used as the main indicator for evaluating model performance in our HD Map construction benchmark. 
 
@@ -249,7 +265,7 @@ The following two metrics are adopted to compare among models' robustness under 
 
 
 
-## TODO List
+## :memo: TODO List
 - [x] Initial release. 🚀
 - [ ] Add scripts for creating common corruptions.
 - [ ] Add evaluation scripts on corruption sets.
