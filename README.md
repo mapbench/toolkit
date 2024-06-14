@@ -285,33 +285,21 @@ The following two metrics are adopted to compare among models' robustness under 
 If you find this work helpful, please kindly consider citing our paper:
 
 ```bibtex
-@inproceedings{kong2023robo3d,
-    author = {Lingdong Kong and Youquan Liu and Xin Li and Runnan Chen and Wenwei Zhang and Jiawei Ren and Liang Pan and Kai Chen and Ziwei Liu},
-    title = {Robo3D: Towards Robust and Reliable 3D Perception against Corruptions},
-    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    pages = {19994--20006},
-    year = {2023},
+@article{hao2024mapbench,
+    author = {Xiaoshuai Hao and Mengchuan Wei and Yifan Yang and Haimei Zhao and Hui Zhang and Yi Zhou and Qiang Wang and Weiming Li and Lingdong Kong and Jing Zhang},
+    title = {Is Your HD Map Constructor Reliable under Sensor Corruptions?},
+    journal = {},
+    year = {2024},
 }
 ```
-```bibtex
-@misc{kong2023robo3d_benchmark,
-  title = {The Robo3D Benchmark for Robust and Reliable 3D Perception},
-  author = {Lingdong Kong and Youquan Liu and Xin Li and Runnan Chen and Wenwei Zhang and Jiawei Ren and Liang Pan and Kai Chen and Ziwei Liu},
-  howpublished = {\url{https://github.com/ldkong1205/Robo3D}},
-  year = {2023},
-}
-```
-
 
 
 ## License
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-<br />
-This work is under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>, while some specific operations in this codebase might be with other licenses. Please refer to [LICENSE.md](docs/LICENSE.md) for a more careful check, if you are using our code for commercial matters.
 
-
+This work is under the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0), while some specific operations in this codebase might be with other licenses. Please refer to [LICENSE.md](docs/LICENSE.md) for a more careful check, if you are using our code for commercial matters.
 
 ## Acknowledgements
+
 
 
 
