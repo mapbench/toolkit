@@ -93,6 +93,13 @@
 | **Fog** | **Motion Blur** | **Crosstalk** | **Cross-Sensor** |
 ||
 
+| Type | Description | Parameter | Easy | Moderate | Hard |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| Wet Ground | significantly attenuated laser echoes | (water height, noise floor) | (0.2, 0.2) | (1.0, 0.3) | (1.2, 0.7) |
+| Snow | back-scattering and attenuation of LiDAR points | (snowfall rate, terminal velocity) | (0.5, 2.0) | (1.0, 1.6) | (2.5, 1.6) |
+| Fog | back-scattering and attenuation of LiDAR points | beta | 0.008 | 0.05 | 0.2 |
+
+
 
 ### Camera Sensor Corruptions
 
