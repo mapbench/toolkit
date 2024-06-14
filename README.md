@@ -158,9 +158,9 @@ The *mean average precision (mAP)* is consistently used as the main indicator fo
 
 
 ### :red_car:&nbsp; Camera-Only Benchmarking Results
-<p align="center">
-  <img src="docs/images/metrics_camera.png" align="center" width="100%">
-</p>
+
+| <img src="docs/images/metrics_camera.png" align="center" width="100%"> |
+| :-: |
 
 | Model            | mCE | mRR | Clean  | Camera | Frame | Quant | Motion | Bright | Dark | Fog | Snow |
 | :--------------: | :-----: | :-----: |:-----: | :-------: | :--------: | :---------: | :---------: | :----: | :-------: | :----: | :----: |
@@ -173,10 +173,11 @@ The *mean average precision (mAP)* is consistently used as the main indicator fo
 |**[StreamMapNet](https://arxiv.org/abs/2308.12570)**   |64.8|54.4|63.4|13.4|15.5|48.1|44.3|57.0|36.1|52.4|9.1|
 |**[HIMap](https://arxiv.org/abs/2308.12570)**          |56.9|56.6|65.5|19.4|19.0|52.0|42.5|60.9|40.6|57.1|5.1|
 
+
 ### :blue_car:&nbsp; LiDAR-Only Benchmarking Results
-<p align="center">
-  <img src="docs/images/metrics_LiDAR.png" align="center" width="100%">
-</p>
+
+| <img src="docs/images/metrics_LiDAR.png" align="center" width="100%"> |
+| :-: |
 
 | Model            | mCE | mRR | Clean  | Fog | Wet | Snow | Motion | Beam | Crosstalk | Echo | Sensor |
 | :--------------: | :-----: | :-----: |:-----: | :-------: | :--------: | :---------: | :---------: | :----: | :-------: | :----: | :----: |
@@ -185,10 +186,11 @@ The *mean average precision (mAP)* is consistently used as the main indicator fo
 |**[MapTRv2](https://arxiv.org/abs/2308.05736)**                     |74.6|57.2|61.5|28.5|29.5|10.3|36.9|27.9|15.4|44.7|14.0|
 |**[HIMap](https://arxiv.org/abs/2308.12570)**                       |73.1|59.2|64.3|26.6|24.6|16.1|37.4|24.4|26.7|43.1|10.8|
 
+
 ### :taxi:&nbsp; Camera-LiDAR Fusion Benchmarking Results
-<p align="center">
-  <img src="docs/images/metrics_Fusion.png" align="center" width="100%">
-</p>
+
+| <img src="docs/images/metrics_Fusion.png" align="center" width="100%"> |
+| :-: |
 
 | Model            | Modality | Camera | Lidar  | AP<sub>ped</sub> | AP<sub>div</sub> | AP<sub>bou</sub> | mAP | 
 | :--------------: | :-----: | :-----: |:-----: | :-------: | :--------: | :---------: | :---------: |
