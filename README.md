@@ -150,9 +150,9 @@ To learn more usage about this codebase, kindly refer to [GET_STARTED.md](docs/G
 
 ## Benchmark
 
-### HD Map construction
+The *mean average precision (mAP)* is consistently used as the main indicator for evaluating model performance in our HD Map construction benchmark. 
 
-The *mean average precision (mAP)* is consistently used as the main indicator for evaluating model performance in our HD Map construction  benchmark. The following two metrics are adopted to compare among models' robustness:
+The following two metrics are adopted to compare among models' robustness under sensor corruptions:
 - **mCE (the lower the better):** The *average corruption error* (in percentage) of a candidate model compared to the baseline model, which is calculated among all corruption types across three severity levels.
 - **mRR (the higher the better):** The *average resilience rate* (in percentage) of a candidate model compared to its "clean" performance, which is calculated among all corruption types across three severity levels.
 
