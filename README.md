@@ -117,17 +117,26 @@
 
 | Type | Description | Parameter | Easy | Moderate | Hard |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| Brightness | 
-| Low-Light |
-| Fog |
-| Snow |
-| Motion Blur |
-| Color Quant |
-
+| Brightness | varying daylight intensity | adjustment in HSV space | 0.2 | 0.4 | 0.5 |
+| Low-Light | varying daylight intensity | scale factor | 0.5 | 0.4 | 0.3 |
+| Fog | a visually obstructive form of precipitation | (thickness, smoothness) | (2.0, 2.0) | (2.5, 1.5) | (3.0, 1.4) |
+| Snow | a visually obstructive form of precipitation | (mean, std, scale, threshold, blur radius, blur std, blending ratio) | (0.1, 0.3, 3.0, 0.5, 10.0, 4.0, 0.8) |  (0.2, 0.3, 2, 0.5, 12, 4, 0.7) | (0.55, 0.3, 4, 0.9, 12, 8, 0.7) |
+| Motion Blur | moving camera quickly | (radius, sigma) | (15, 5) | (15, 12) | (20, 15) |
+| Color Quant | reducing the number of colors | bit number | 5 | 4 | 3 |
 
 
 ### Camera Sensor Failures
 
+|||
+|:-:|:-:|
+| <img src="./docs/GIFs/camera/frame-lost-easy.gif" width="380"> | <img src="./docs/GIFs/camera/camera-crash-easy.gif" width="380"> |
+| Frame Lost | Camera Crash |
+||
+
+| Type | Description | Parameter | Easy | Moderate | Hard |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| Frame Lost | dropping temporal frames | probability of frame dropping | 2/6 | 4/6 | 5/6 |
+| Camera Crash | dropping view images | number of dropped cameras | 2 | 4 | 5 |
 
 
 
