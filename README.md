@@ -196,7 +196,7 @@ The following two metrics are adopted to compare among models' robustness under 
 
 | Model            | mCE | mRR | Clean  | Camera | Frame | Quant | Motion | Bright | Dark | Fog | Snow |
 | :--------------: | :-----: | :-----: |:-----: | :-------: | :--------: | :---------: | :---------: | :----: | :-------: | :----: | :----: |
-|**[HDMapNet](https://arxiv.org/abs/2107.06307)**       |18.7.8|43.3|23.0|4.6|5.1|18.9|20.8|16.7|9.3|10.6|5.2|
+|**[HDMapNet](https://arxiv.org/abs/2107.06307)**       |18.78|43.3|23.0|4.6|5.1|18.9|20.8|16.7|9.3|10.6|5.2|
 |**[VectorMapNet](https://arxiv.org/abs/2206.08920)**   |148.5|40.6|40.9|13.9|12.3|26.6|29.7|25.2|7.8|18.3|2.9|
 |**[PivotNet](https://arxiv.org/pdf/2308.16477)**       |96.3|45.2|57.4|17.1|16.7|36.4|34.1|43.5|16.5|37.4|4.6|
 |**[BeMapNet](https://openaccess.thecvf.com/content/CVPR2023/html/Qiao_End-to-End_Vectorized_HD-Map_Construction_With_Piecewise_Bezier_Curve_CVPR_2023_paper.html)**            |78.5|50.3|59.8|18.8|18.5|38.1|35.3|50.7|23.2|46.5|9.6|
@@ -230,9 +230,9 @@ The following two metrics are adopted to compare among models' robustness under 
 |**[MapTR](https://arxiv.org/abs/2208.14437)**  |   C   | ✓          |  —            |46.3|51.5|53.1|50.3|
 |**[MapTR](https://arxiv.org/abs/2208.14437)**  |   C   |Camera Crash |  —            |18.0|14.5|12.4|15.0|
 |**[MapTR](https://arxiv.org/abs/2208.14437)**  |   C   |Frame Lost   |  —            |13.9|15.1|13.4|14.2|
-|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L | ✗          |  —            |15.0|18.2|34.4|22.5|
-|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L |Camera Crash |  —            |32.5|36.5|48.4|39.1|
-|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L |Frame Lost   |  —            |29.1|33.7|46.1|36.3|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L | ✗           | ✓             |15.0|18.2|34.4|22.5|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L |Camera Crash |  ✓            |32.5|36.5|48.4|39.1|
+|**[MapTR](https://arxiv.org/abs/2208.14437)**  | C & L |Frame Lost   |  ✓            |29.1|33.7|46.1|36.3|
 |**[MapTR](https://arxiv.org/abs/2208.14437)**  |   L   | —           | ✓            |26.6|31.7|41.8|33.4|
 |**[MapTR](https://arxiv.org/abs/2208.14437)**  |   L   | —           |Incomplete Echo|26.3|29.9|40.6|32.3|
 |**[MapTR](https://arxiv.org/abs/2208.14437)**  |   L   | —           |Crosstalk      |13.6|15.0|20.3|16.3|
@@ -254,9 +254,9 @@ The following two metrics are adopted to compare among models' robustness under 
 |**[HIMap](https://arxiv.org/abs/2308.12570)**    |   C   | ✓          |  —            |62.2|66.5|67.9|65.5|
 |**[HIMap](https://arxiv.org/abs/2308.12570)**   |   C   |Camera Crash |  —            |27.3|19.4|11.6|19.4|
 |**[HIMap](https://arxiv.org/abs/2308.12570)**    |   C   |Frame Lost   |  —            |21.7|19.1|16.1|19.0|
-|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L | ✗          |  —            |40.9|46.4|74.7|50.7|
-|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L |Camera Crash |  —            |36.3|27.7|20.9|28.3|
-|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L |Frame Lost   |  —            |29.9|25.0|23.8|26.2|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L | ✗          |  ✓           |40.9|46.4|74.7|50.7|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L |Camera Crash |  ✓            |36.3|27.7|20.9|28.3|
+|**[HIMap](https://arxiv.org/abs/2308.12570)**    | C & L |Frame Lost   |  ✓           |29.9|25.0|23.8|26.2|
 |**[HIMap](https://arxiv.org/abs/2308.12570)**    |   L   | —           | ✓            |54.8|64.7|73.5|64.3|
 |**[HIMap](https://arxiv.org/abs/2308.12570)**    |   L   | —           |Incomplete Echo|35.4|41.1|52.7|43.1|
 |**[HIMap](https://arxiv.org/abs/2308.12570)**    |   L   | —           |Crosstalk      |20.9|23.8|35.3|26.7|
