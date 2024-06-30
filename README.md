@@ -288,7 +288,7 @@ If you find this work helpful, please kindly consider citing our paper:
 @article{hao2024mapbench,
     author = {Xiaoshuai Hao and Mengchuan Wei and Yifan Yang and Haimei Zhao and Hui Zhang and Yi Zhou and Qiang Wang and Weiming Li and Lingdong Kong and Jing Zhang},
     title = {Is Your HD Map Constructor Reliable under Sensor Corruptions?},
-    journal = {},
+    journal={arXiv preprint arXiv:2406.12214},
     year = {2024},
 }
 ```
