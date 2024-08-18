@@ -276,7 +276,7 @@ The following two metrics are adopted to compare among models' robustness under 
 
 ## :memo: TODO List
 - [x] Initial release. 🚀
-- [ ] Add scripts for creating common corruptions.
+- [x] Add scripts for creating common corruptions.
 - [ ] Add evaluation scripts on corruption sets.
 - [ ] ...
 
